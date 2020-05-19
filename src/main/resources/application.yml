@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url : jdbc:postgresql://localhost:5432/manytomany
+    username: postgres
+    password: postgres
+    application.name: com.aleairy.hotelbooker.HotelbookerApplication
+  session:
+    jdbc:
+      initialize-schema: always
+      table-name: SPRING_SESSION
+server:
+  address: localhost
+  port: 8080
+
+
